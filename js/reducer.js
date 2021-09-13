@@ -10,4 +10,6 @@ function reducer(state, action){
   }
 }
 
-reducer({count: 0}, {type: 'INCREASE_COUNT'});
+function dispatch(action){
+    state = reducer(state, action);
+}
